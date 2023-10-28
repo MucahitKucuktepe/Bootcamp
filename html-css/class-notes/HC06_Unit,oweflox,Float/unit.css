@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+
+}
+
+.abs{
+    background-color: chocolate;
+    /* width: 500px; */
+    width: 15cm ;
+  
+
+}
+.div2{
+    background-color: blueviolet;
+    width: 50%;
+    height: 300px;
+
+}
+.div3{
+    background-color: chocolate;
+    width: 50%;
+    height: 40%;
+}
+.div4{
+    background-color: gold;
+    width: 60vw;
+    height: 50%;
+}
+
+.div5{
+    font-size: 25px;
+    
+}
+.div6{
+    font-size: 2em;
+
+}
+.div7{
+    font-size: 2em;
+
+}
+.div8{
+    font-size: 25px;
+
+}
+.div9{
+    font-size: 2rem;
+
+}
+.div10{
+    font-size: 3rem;
+
+}

@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+h2{
+    color: inherit;
+}
+.container{
+    font-size: 16px;
+}
+#par1{
+    color: inherit;
+    text-align: center;
+    text-shadow: 5px 5px 10px blue;
+    column-count: 3;
+    column-rule: 3px dotted red;
+    font-size: 2em;
+    
+}
+
+#par2{
+    color: rgb(251, 245, 245);
+  
+    text-transform: uppercase;
+    direction: rtl;
+    background-color: rgb(89, 112, 112);
+    text-shadow: 2px 5px 5px red;
+    box-shadow: 3px 7px 20px black;
+    border-radius: 4%;
+    text-indent: 2rem;
+
+}
+
+#par3{
+    color: inherit;
+    text-align: justify;
+    text-decoration: underline;
+    
+
+}
+
+#par4{
+    color: hsla(175, 84%, 35%, 0.765);
+    text-decoration: line-through wavy;
+
+}
+
+#par5{
+    color: fuchsia;
+    text-decoration: overline line-through wavy;
+
+}
+
+#par6{
+    background-color: rgba(0, 0, 0, 0.772);
+    color: wheat;
+    padding: 5px;
+    text-indent: 3rem;
+   
+    letter-spacing: 3px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling</title>
+    <!-- 3- Harici CSS -->
+
+    <style>
+      /* 2- Internal CSS */
+      /* CSS alani */
+
+      /* Selector (id,class,tag)*/
+
+      /* id'ye gore secim */
+      #second-par {
+        color: lightcoral;
+      }
+
+      /* classa gore secim */
+      .par {
+        color: purple;
+      }
+
+      /* etikete gore secim */
+      span {
+        color: royalblue;
+      }
+
+      p {
+        color: seagreen;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="bootstrap"> -->
+    <!-- Harici stil dosyasinin bulundugu satir Diger stilleri ezmek icin onemli olabilmektedir. Eger bir elementin stili (class, id veya tag) i hem internal hem external dosyadan degisitiriliyorsa bu durumda hangisi daha alt satirda ise Onun stili aktif olmuş olur. Ornegin external css dosyanin linki internal'dan daha alttaysa bu durumda external'a göre stillendirme aktif olur. -->
+    <link rel="stylesheet" href="stil.css" />
+  </head>
+  <body>
+    <!-- 1-Inline CSS -->
+    <h1 style="color: lightblue; background-color: red">Styling</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ea natus
+      blanditiis facilis ex, suscipit deserunt explicabo enim soluta totam, esse
+      possimus qui veniam quidem quisquam quasi minima amet impedit?
+    </p>
+
+    <p id="second-par">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore a sunt
+      laborum, illum optio ut rem veritatis dolore amet odio?
+    </p>
+
+    <p class="par">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto hic
+      expedita consequuntur in, odit beatae neque quod nobis dolores aut ipsa
+      enim doloremque ullam numquam sunt placeat quae deleniti cum!
+    </p>
+
+    <p class="par">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure distinctio
+      quod soluta veritatis praesentium, rerum nostrum sunt architecto, corrupti
+      totam dolorem provident cum, nemo repudiandae? Ipsam omnis unde fuga
+      reiciendis?
+    </p>
+
+    <h4 class="par">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero,
+      officiis neque similique quasi molestias delectus assumenda possimus
+      explicabo fuga.
+    </h4>
+
+    <div>Bu bir div: <span>Lorem ipsum dolor sit.</span></div>
+
+    <p>FİYAT=<span>5000TL</span></p>
+
+    <main>
+      <section>
+        <h3>Bu bir h3</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+          provident amet tenetur similique vitae autem neque maiores. Tenetur,
+          quae error!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

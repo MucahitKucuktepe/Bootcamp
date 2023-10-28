@@ -1,0 +1,24 @@
+#par1 {
+  border: 3px dotted red;
+}
+#par2 {
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  padding: 50px;
+}
+#par3 {
+  border: 2px double magenta;
+}
+#par4 {
+  border: 10px dashed orange;
+}
+#par5 {
+  border: 6px outset red;
+  border-radius: 20px;
+}

@@ -1,0 +1,49 @@
+*{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+header{
+    background-color: seagreen;
+    margin-top: 10px;
+
+}
+
+main{
+    background-color: skyblue;
+    padding: 5px;
+    /* height: 350px; */
+    /* overflow: auto; */
+
+}
+aside{
+    background-color: darkorange;
+    width: 25%;
+    height: 300px;
+    float:left;
+    margin-left: 15px;
+
+}
+article{
+    background-color: greenyellow;
+    width: 70%;
+    height: 300px;
+    float: left;
+
+}
+footer{
+    background-color: coral;
+
+}
+/* .clear{
+    clear: both;
+    border: none;
+} */
+
+.clearfix::after{
+    content: "MÜCAHİT";
+    clear: both;
+    display: block;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>Formlar</h1>
+
+    <form action="">
+      <!-- NAME -->
+      <section>
+        <label for="first-name">Name</label>
+        <input type="text" id="first-name" name="firstName" value="" required />
+      </section>
+      <br />
+
+      <!-- EMAİL -->
+      <section>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="isim@mail.com"
+          required
+        />
+      </section>
+      <br />
+
+      <!-- PASSWORD -->
+      <section>
+        <label for="password"></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="En az 8 karakter giriniz"
+          maxlength="12"
+          minlength="8"
+        />
+      </section>
+      <br />
+      <!-- AGE -->
+      <section>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required min="0" max="100" />
+      </section>
+      <br />
+      <!-- GENDER -->
+      <section>
+        <label for="">Gender:</label> <br />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" checked id="female" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Male" />
+      </section>
+      <br />
+      <!-- LANGUAGE CHECKBOX -->
+      <label for="languages">Languages:</label> <br />
+      <input type="checkbox" name="languages" value="english" id="languages" />
+      English <br />
+
+      <input type="checkbox" name="languages" value="turkce" id="languages" checked />
+      Türkçe <br />
+
+      <input type="checkbox" name="languages" value="Français" id="languages" />
+      Français <br />
+
+      <!-- DATE -->
+      <section>
+        <label for="dob">Dogum Tarihi</label> <br />
+        <input type="date" name="dob" id="dob" min="1990-01-01" />
+      </section>
+      <br />
+
+      <!-- SELECT -->
+      <section>
+        <label for="">Favori Tatlılar:</label> <br>
+        <select name="tatli" id="tali">
+          <optgroup label="şerbetli tatlilar">
+            <option value="künefe">Künefe</option>
+            <option value="havuç dilimi">H. Dilimi</option>
+          </optgroup>
+
+          <optgroup label="sütlü tatlılar">
+            <option value="sütlaç">Sütlaç</option>
+            <option value="kazandibi">Kazandibi</option>
+          </optgroup>
+        </select>
+      </section>
+
+      <br /><br />
+
+       <!-- TEXTAREA -->
+       <section>
+        <label for="yorum">Yorumlarınızı Giriniz:</label>
+        <br />
+        <textarea
+          name="yorum"
+          id="yorum"
+          cols="30"
+          rows="5"
+          style="resize: none"
+          maxlength="100"
+          placeholder="En fazla 100 karakter girilebilir"
+        ></textarea>
+
+      <!-- BUTTONS -->
+      <section>
+        <input type="submit" value="Kaydet" />
+        <button type="reset">Sil</button>
+
+      <!-- BUTTONS -->
+      <section>
+        <input type="submit" value="Kaydet" />
+        <button type="reset">Sil</button>
+        <input type="datetime-local" />
+      </section>
+      <p></p      
+    </form>
+  </body>
+</html>

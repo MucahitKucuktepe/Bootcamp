@@ -1,0 +1,31 @@
+.font1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+.font2 {
+  font-family: "muco2";
+  font-size: 1.3rem;
+}
+.font3 {
+  font-family: "muco";
+  font-size: 30px;
+  font-weight: 200;
+  font-variant: small-caps;
+}
+.font4 {
+  font-family: "Amatic SC", cursive;
+  font-family: "Fuggles", cursive;
+  font-family: "Kenia", cursive;
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Spirax", cursive;
+}
+@font-face {
+    font-family: "muco";
+    src: url(./fontlar/LobsterTwo-Italic.ttf);
+}
+
+@font-face {
+  font-family: "muco2";
+  src: url(./fontlar/SedgwickAve-Regular.ttf);
+}

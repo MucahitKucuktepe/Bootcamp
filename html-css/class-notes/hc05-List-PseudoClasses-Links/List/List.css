@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+ul.languages {
+  list-style-type: circle;
+  list-style-type: disc;
+  list-style-position: inside;
+
+  list-style-image: url(./img/house-solid.svg);
+}
+.fa-money-bill {
+  color: aqua;
+  font-size: 50px;
+}
+
+h2 {
+  color: blue;
+}
+
+h2 i {
+  color: crimson;
+}
+
+ul.languages li {
+  background-color: green;
+  margin: 5px;
+  width: 200px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 3px solid darkorange;
+  border-left: 5px solid gray;
+}
+
+ul.languages li:hover {
+  background-color: red;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* PSEUDO CLASS */
+ul.pseudo li:first-child {
+  color: red;
+}
+
+ul.pseudo li:last-child {
+  color: blue;
+}
+
+ul.pseudo li:nth-child(3) {
+  color: darkgoldenrod;
+  background-color: darkblue;
+  font-family: 'Lobster', cursive;
+}
+
+ul.pseudo li:nth-child(even) {
+  color: darkgoldenrod;
+  background-color: aquamarine;
+}
+ul.pseudo li:nth-child(odd) {
+  color: darkgoldenrod;
+  background-color: red;
+}
+
+ul.pseudo li:last-child {
+  color: blue;
+}
+ul.pseudo li:nth-child(5){
+  color: blue;
+  font-size: ;
+}
+
+ul.pseudo li:active {
+  color: white;
+  background-color: black;
+}
+
+ul.pseudo li:hover {
+  color: orangered;
+  background-color: white;
+  cursor:pointer;
+  transition: 5s;
+}
+
+input:focus{
+  background-color: tomato;
+  color: white;
+  border: 4px dashed gray;
+  outline: none;
+}
+
+/* LINK PSEUDO CLASSES */
+nav.link1 a:link{
+  color: red;
+}
+.link1 a:visited{
+  color: magenta;
+}
+
+nav.link1 a:hover{
+  cursor: pointer;
+  color: red;
+}
+
+nav.cw a{
+  text-decoration: none;
+  border: 2px solid darkorange;
+  padding: 5px;
+  margin: 10px;
+  color: darkorange;
+  border-radius: 10px;
+}
+nav.cw a:hover{
+  background-color: gray;
+  cursor: pointer;
+  color: red;
+}
+nav.cw a i{
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+
+nav.cw a i:hover{
+  margin: 5px;
+  font-size: 1.3rem;
+}
+
+nav.cw a:hover i{
+  color: aqua;
+ 
+}
+
+/* PSEUDO ELEMENTS */
+.p-elements::first-line{
+  color: red;
+}
+.p-elements::first-letter{
+  font-size: larger;
+}
+
+ul.before-after li::before{
+  content: "🦆";
+}
+
+ul.before-after{
+  list-style-type: none;
+ 
+}
+ul.before-after li:nth-child(3)::before{
+  content: "🐢";
+}
+
+ul.before-after li{
+  margin: 0.5rem;
+  background-color: orange;
+}

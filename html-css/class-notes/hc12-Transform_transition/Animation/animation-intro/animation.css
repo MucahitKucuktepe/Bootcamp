@@ -1,0 +1,30 @@
+.outer {
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+}
+.inner {
+  width: 50%;
+  height: 50%;
+  background-color: aqua;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+ animation: travel 1s ease-in-out infinite alternate;
+}
+
+@keyframes travel {
+  0% {
+    transform: translateX(0);
+    background-color: orange;
+  }
+  25% {
+    transform: translateY(100%);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

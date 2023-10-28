@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+nav{
+    /* border: 2px solid red; */
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+nav .left,
+nav .right,
+nav .middle{
+    /* width: 33%; */
+    /* border: 2px solid red; */
+}
+
+nav .left img{
+    width: 50px;
+    height: 50px;
+}
+
+nav .left{
+    flex: 1;
+    background-color: #bcbcbb;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav .middle{
+    flex: 1;
+    background-color: #bcbcbb;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 0;
+    height: 250px;
+    align-items: center;
+}
+
+nav .middle .item{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+nav .right{
+    flex: 1;
+    background-color: #bcbcbb;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 2rem; */
+    height: 250px;
+    align-items: center;
+}
+
+nav .right i{
+    color: black;
+    font-size: 3rem;
+}
+
+header {
+   
+    display: flex;
+    gap: 1rem;
+    margin-top: 50px;
+}
+.img img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.img{
+
+flex: 1;
+order: 1;
+}
+
+.text{
+  
+    flex: 1;
+    line-height: 2;
+    order: 2;
+    background-image: url("https://picsum.photos/id/42/600/400");
+    background-size: cover;
+    color: yellow;
+    padding: 50px;
+
+}

@@ -1,0 +1,25 @@
+/* .list {
+  background-color: orange;
+} */
+/* * {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+} */
+h1 {
+  color: red;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  color: magenta;
+}
+
+li:hover {
+  font-weight: 900;
+}
+h1:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

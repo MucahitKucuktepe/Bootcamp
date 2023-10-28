@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+h1 {
+  background-color: crimson;
+
+  margin-top: 100px;
+  margin-bottom: 200px;
+  border: 10px solid yellow;
+}
+
+#par1 {
+  background-color: olive;
+  /* margin: 50px 10px 25px 90px; */
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 5px solid red;
+  padding: 50px;
+  box-sizing: border-box;
+  overflow: auto;
+  margin-top: 10px;
+}
+#par2 {
+  background-color: magenta;
+  margin-bottom: 20px;
+}
+#link {
+  background-color: blue;
+  display: block;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.container {
+  background-color: orange;
+  border: 1px solid red;
+  /* border: 1px solid red; */
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 200px 400px 200px;
+  grid-template-rows: 200px 400px 200px;
+}
+
+.content {
+    background-color: skyblue;
+    border: 1px solid red;
+}
+
+.content1 {
+
+}
+.content1 img{
+    height: 100%;
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

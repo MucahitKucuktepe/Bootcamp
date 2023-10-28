@@ -1,0 +1,66 @@
+/* div p {
+    /* background-color: olive; */
+
+/* /* .container div p {
+    /* background-color: magenta; */
+
+/* p den hemen sonra gelen ilk div */
+/* p + div {   
+    background-color: blueviolet;
+} */
+/*  div den sonra gelen ilk  p */
+
+/* div + p {
+    background-color: red;
+} */
+/*  div den hemen sonra gelen bütün p leri kapsar  */
+/* div ~ p {
+    background-color: aqua;
+} */
+
+p[title="paragraf2"]{
+    background-color: aqua;
+}
+
+a[target="_blank"]{
+    background-color: rebeccapurple;
+}
+
+p[title="paragraf2"]::first-letter{
+    background-color:red;
+    font-size: 2em;
+}
+
+.out{
+    border: 2px solid red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: auto;
+}
+.out:hover{
+    outline: 3px dotted aqua;
+    cursor: pointer;
+    outline-offset: .5rem;
+}
+
+.cw{
+    border: 5px solid red;
+    text-align: center;
+    width: 20rem;
+    margin: 40px auto;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 10px solid purple;
+    outline-offset: 0.5rem;
+    background-color: orange;
+}
+
+

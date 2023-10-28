@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>Formlar</h1>
+    <form action="">
+      <!-- NAME -->
+      <section>
+        <label for="first-name">Name</label>
+        <input type="text" id="first-name" name="FirstName" value="" required />
+      </section>
+      <br />
+      <!-- EMAİL -->
+      <section>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value=""
+          required
+          placeholder="isim@mail.com"
+        />
+      </section>
+      <br />
+      <!-- PASSWORD -->
+      <section>
+        <label for="pasword">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="en az 8 karakter giriniz"
+          minlength="8"
+          maxlength="12"
+        />
+      </section>
+      <br />
+
+      <!-- AGE (NUMBER) -->
+      <section>
+        <label for="age">Age</label>
+        <input type="Number" name="age" id="age" required min="0" max="100" />
+      </section>
+      <br />
+      <!--GENDER  (RADİO) -->
+      <section>
+        <label for="gender">Gender</label><br />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+      </section>
+      <br />
+      <!--LANGUAGE (CHECKBOX) -->
+      <section>
+        <label for="">Languages:</label><br />
+        <input
+          type="checkbox"
+          name="Languages"
+          id="languages"
+          value="turkce"
+          checked
+        />Türkçe <br />
+        <input
+          type="checkbox"
+          name="Languages"
+          id="languages"
+          value="arabia"
+        />Arabia <br />
+        <input
+          type="checkbox"
+          name="Languages"
+          id="languages"
+          value="english"
+        />English <br />
+        <input
+          type="checkbox"
+          name="Languages"
+          id="languages"
+          value="français"
+        />Français <br />
+        <input
+          type="checkbox"
+          name="Languages"
+          id="languages"
+          value="Dutch"
+        />Dutch <br />
+      </section>
+      <br />
+
+      <!-- DATE -->
+      <section>
+        <label for="date">Dogum Tarihi</label>
+        <input type="date" name="date" id="date" />
+      </section>
+      <br />
+
+      <!-- SELECT -->
+      <section>
+        <label for="">Favori Tatlılar</label> <br />
+        <select name="tatli" id="tatli">
+          <optgroup label="şerbetli tatlilar">
+            <option value="künefe">Künefe</option>
+            <option value="havuç dilim">H. Dilimi</option>
+          </optgroup>
+          <optgroup label="sütlü tatlilar">
+            <option value="kazandibi">Kazandibi</option>
+          </optgroup>
+        </select>
+      </section>
+
+      <!-- TEXT AREA -->
+      <label for="yorum">Yorumlarınızı giriniz</label> <br />
+      <textarea
+        name="yorum"
+        id="yorum"
+        cols="30"
+        rows="10"
+        style="resize: none"
+        placeholder="En fazla 100 karakter giriniz"
+      ></textarea>
+
+      <!-- BUTTONS -->
+      <section>
+        <input type="submit" value="Kaydet" />
+        <button type="reset">sil</button>
+      </section>
+    </form>
+  </body>
+</html>

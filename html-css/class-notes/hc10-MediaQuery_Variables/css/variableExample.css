@@ -1,0 +1,24 @@
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+.main {
+  display: flex;
+}
+
+.card1,
+.card2 {
+  background-color: bisque;
+  width: 30%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.card1 img,
+.card2 img {
+  width: 100%;
+}

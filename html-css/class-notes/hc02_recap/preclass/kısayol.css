@@ -1,0 +1,10 @@
+.art {
+  color: red;
+}
+
+.art.iki {
+  color: blue;
+}
+.art.uc {
+  background-color: aqua;
+}
