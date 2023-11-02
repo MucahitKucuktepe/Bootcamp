@@ -6,8 +6,7 @@ console.log("**** TRAVERSING DOM ****")
 //? Bir HTML elementi uzerinden baska elementleri secmeye
 //? DOM traversing denilir. Ozellikle dinamik olarak degisen
 //? (silme veya yeni ekleme gibi) HTML elemanlarinin secerken
-//? gerekli olabilir.
-
+//? gerekli olabilir
 //? Secme islemi 3 yonlu yapilabilir.
 //? - Yukari yonde (Parent)
 //? - Asagi yonde (children)
