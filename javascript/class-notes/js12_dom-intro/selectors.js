@@ -83,10 +83,17 @@ console.log(document.querySelector(".item-list"));
 console.log(document.querySelector("h3"));
 
 console.log(document.querySelector("section.add-item #btn"));
+
+console.log(document.querySelector(".item-list ul li:nth-child(4)").innerText);
 //* ========================================
 //*              QUERYSELECTORALL()
 //* ========================================
 
 //*queryselectorAll bir nodelist döndürür .nodelist dahili olarak forEach metodunu barındırır.Ama istenirse spread veya Array.from ile
-
+const itemList=document.querySelectorAll("section.item-list li")
+console.log(itemList);
+itemList.forEach((li)=>console.log(li))
 console.log("********************");
+for(let li of itemList.values()){
+    console.log(li);
+}
