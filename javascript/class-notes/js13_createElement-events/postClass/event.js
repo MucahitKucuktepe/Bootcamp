@@ -50,19 +50,19 @@ ul.innerHTML += `
 <li>Asembly</li>
 `;
 
-const section2=document.createElement("button")
-const text2=document.createTextNode("delete")
-section2.appendChild(text2)
-document.querySelector(".add-item").appendChild(section2)
-section2.setAttribute("class", "delete")
+const section2 = document.createElement("button");
+const text2 = document.createTextNode("delete");
+section2.appendChild(text2);
+document.querySelector(".add-item").appendChild(section2);
+section2.setAttribute("class", "delete");
 
-const section3=document.createElement("section")
-document.querySelector("main").appendChild(section3)
+const section3 = document.createElement("section");
+document.querySelector("main").appendChild(section3);
 // section2.onmouseover=function()=>{
 //   remove(document.querySelector("ul li"))
 // }
 
-section3.innerHTML=`
+section3.innerHTML = `
 <div class="card" style="width: 18rem;">
   <img src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -72,16 +72,15 @@ section3.innerHTML=`
   </div>
 </div>
 
-`
-const header =document.querySelector("header")
+`;
+const header = document.querySelector("header");
 
-header.onmouseover=function(){
-  header.style.backgroundColor="red"
-}
-header.onmouseout=function(){
-  header.style.backgroundColor="transparent"
-}
-
+header.onmouseover = function () {
+  header.style.backgroundColor = "red";
+};
+header.onmouseout = function () {
+  header.style.backgroundColor = "transparent";
+};
 
 //?3.yontemle event tanımlandı
 //* mouse header ın üzerine geldiğinde ilgili function cagırılır
@@ -91,8 +90,53 @@ header.onmouseout=function(){
 //? addeventlistener metodu ile event tanımlandı
 //* add nutonuna tıklanıldıgında functon cagrılır
 
+const addButton = document.getElementById("btn");
+
+// addButton.addEventListener("click",()=>{
+//   alert("button tıklanıldı")
+// })
+
 //?input elementi üzerinde iken kalvyeden bir tusa basılıp-bırakıldıdıgında (keyup) tetiklenir
 
 //? onload Html ve Css kodlarının render edilmesinin hemen akabinde calısır
+const yazdir = () => {
+  document.write("hello world");
+};
+window.onload = yazdir();
 
 //? window yüklendiğinde input a fokuslan
+
+const input = document.querySelector("#input");
+
+window.addEventListener("load", () => {
+  input.focus();
+});
+
+const ul2 = document.querySelector("ul");
+const li = document.querySelector("ul li:nth-last-child(1)");
+console.log(li);
+
+addButton.addEventListener("click", () => {
+  if (!input.value.trim()) {
+    alert("lütfen bir değer giriniz");
+  } else {
+    console.log(input.value);
+    const li = document.createElement("li");
+    const text = document.createTextNode(input.value);
+    li.appendChild(text);
+    ul2.appendChild(li);
+    input.value = "";
+    input.focus();
+  }
+});
+
+section2.addEventListener("click", () => {
+  li.remove();
+  input.value = "";
+  input.focus();
+  
+});
+
+input.addEventListener("keyup", (e) => {
+  console.log(e);
+});
