@@ -34,5 +34,11 @@
         @extend .header__links--home;
         color: #b8becd;
     }
+    &--login{
+        @include btn(1.6rem,0.3rem,$btnBorderColor,$mainColor)
+    }
+    &--register {
+        @include btn(1.6rem,0.3rem,$mainColor,$btnBorderColor)
+    }
   }
 }

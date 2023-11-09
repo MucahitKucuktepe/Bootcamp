@@ -39,6 +39,36 @@
 .header__links--disabled {
   color: #b8becd;
 }
+.header__links--login {
+  border: 1px solid #fb8f1d;
+  color: #fb8f1d;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-inline: 1.6rem;
+  padding-block: 0.3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+}
+.header__links--login:hover {
+  opacity: 0.5;
+}
+.header__links--register {
+  border: 1px solid #fb8f1d;
+  color: #ffffff;
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  padding-inline: 1.6rem;
+  padding-block: 0.3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+}
+.header__links--register:hover {
+  opacity: 0.5;
+}
 
 body {
   background-color: #ffffff;
