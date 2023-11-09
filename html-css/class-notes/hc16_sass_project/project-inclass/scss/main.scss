@@ -1,1 +1,28 @@
-// main 
+// main
+//?BASE-ABSTRACTS
+@use "./abstracts/variables" as v;
+@use "./abstracts/mixin";
+@use "./base/reset";
+
+
+//?COMPONENETS
+@use "./components/navbar";
+
+
+//?FONT AND 3RD PARTY
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
+body {
+  background-color: v.$mainColor;
+}
+
+.container {
+  max-width: v.$maxWidth;
+  margin: auto;
+  padding: 1rem;
+}
+
+button,
+i {
+  cursor: pointer;
+}

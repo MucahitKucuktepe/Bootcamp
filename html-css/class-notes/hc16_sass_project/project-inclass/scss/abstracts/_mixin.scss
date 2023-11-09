@@ -1,1 +1,13 @@
 // mixin
+@mixin flex($jc,$ai: center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin setFont($ff,$fw,$fs,$lh){
+    font-family: $ff;
+      font-weight:$fw;
+      font-size: $fs;
+      line-height: $lh;
+}
