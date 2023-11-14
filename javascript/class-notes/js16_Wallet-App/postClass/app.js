@@ -50,23 +50,43 @@ harcamaFormu.addEventListener("submit", (e) => {
     alan: harcamaAlaniInput.value,
     miktar: miktarInput.value,
   };
-  console.log(yeniHarcama);
   harcamaFormu.reset();
   tarihInput.valueAsDate = new Date();
 
   harcamaListesi.push(yeniHarcama);
   localStorage.setItem("harcamlar", JSON.stringify(harcamaListesi));
-  harcamayiDomaYaz(yeniHarcama)
+  harcamayiDomaYaz(yeniHarcama);
 });
 
 //*Harcamayı Dom a yaz
 
-const harcamayiDomaYaz=({id,miktar,tarih,alan})=>{
-    harcamaBody.innerHTML +=`
-    <td>${tarih}</td>
-    <td>${alan}</td>
-    <td>${miktar}</td>
-    <td><i id=${id} class="fa-solid fa-trash-can text-danger" type="button" ></i></td>
-    `
-}
- 
+const harcamayiDomaYaz = ({ id, miktar, tarih, alan }) => {
+  //! 1.yöntem tavisye edilmiyor
+  // harcamaBody.innerHTML +=`
+  // <td>${tarih}</td>
+  // <td>${alan}</td>
+  // <td>${miktar}</td>
+  // <td><i id=${id} class="fa-solid fa-trash-can text-danger" type="button" ></i></td>
+  // `
+
+  const tr = document.createElement("tr");
+
+  const appendTd = (content) => {
+    const td = document.createElement("td");
+    td.textContent = content;
+    return td;
+  };
+
+  const creatLastTd = () => {
+    const td = document.createElement("td");
+    const iElement = document.createElement("i");
+    iElement.id = id;
+    iElement.className = "fa-solid fa-trash-can text-danger";
+    iElement.type = "button";
+    td.appendChild(iElement);
+    return td;
+  };
+
+  tr.append(appendTd(tarih), appendTd(alan), appendTd(miktar), creatLastTd());
+  harcamaBody.append(tr);
+};
