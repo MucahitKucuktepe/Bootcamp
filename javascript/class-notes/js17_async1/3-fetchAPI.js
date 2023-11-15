@@ -10,5 +10,30 @@
 //? fetch() fonksiyonu veri getirmek istediginiz kaynagin yolunu gosteren zorunlu
 //? bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
 
-console.log("FETCH")
+console.log("FETCH");
+let veri = "merhaba";
+fetch("https://api.github.com/users")
+  .then((res) => {
+    // console.log(res);
+    if (!res.ok) {
+      throw new Error(`Hata: ${res.status}`);
+    }
+    return res;
+  })
+  .then((res) => res.json())
+  .then((data) => {
+show(data)
+  })
+  .catch((err) => document.write(err));
 
+console.log(veri);
+
+const show = (users) => {
+  const userSection = document.getElementById("users");
+  users.forEach((user) => {
+    userSection.innerHTML += `
+    <h1>${user.login}</h1>
+    
+        `;
+  });
+};

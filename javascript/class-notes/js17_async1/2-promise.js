@@ -30,4 +30,26 @@
 //? then() ve catch() metotlari promise dondururler.
 //? Zincirleme olarak kullanilabilirler.
 
-console.log("Promise")
+console.log("Promise");
+
+const req = new Promise((resolve, reject) => {
+  const veri = { name: "Ahmet", surname: "CAN" }; //? mock Data (gelen veri)
+  const basarili = Math.floor(Math.random() * 3); //? 0 1 2 3 4...9
+  console.log(basarili);
+
+  if (basarili) {
+    resolve(veri);
+  } else {
+    reject("Network hatasi oluştu");
+  }
+});
+
+req
+  .then((res) => {
+    //? basarılı durumları işlemek için then() metotları kullanılır
+    console.log(res);
+    return res;
+  })
+  .then((x) => console.log(x.name)) //?zincirleme kullanmak mümkündür
+  .catch((err) => document.write(err))//?hatayı handle etmek için catch kullanılır
+  .finally(() => console.log("Her Türlü Çalışır")); //? bağlantıyı sonlandırmak için kullanılır
