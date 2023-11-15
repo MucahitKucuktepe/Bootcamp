@@ -19,4 +19,26 @@
 //* Senkron
 //* ------------------------------------------------
 
-console.log("*** Senkron *** ")
+// console.log("*** Senkron *** ")
+
+// console.log("FS15");
+
+// const gecikme =(sure)=>{
+//     const basla=new Date().getTime()
+//     while(new Date().getTime()< basla +sure){}
+// }
+// const baslangic=console.time("basla") //timer ı başlat
+// gecikme(2000)
+// console.log("bitti");
+// console.timeEnd("basla") //timer ı bitir ve geçen süreyi bana göster
+
+//* Asenkron(SeTimout)
+//* ------------------------------------------------
+console.log("TimeOut kuruldu");
+const timeOut=setTimeout(()=>{
+    console.log("Sure Doldu");
+},1000)
+const timeOut2=setTimeout(()=>{
+    console.log("Sure2 Doldu");
+},0)
+console.log("TimeOut bitti");
