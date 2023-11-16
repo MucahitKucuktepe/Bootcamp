@@ -17,3 +17,46 @@
 //* Await, promise-temelli herhangi bir fonksiyonun onune getirilerek getirildigi
 //* satirdaki kodun durdurulmasini saglar.
 //* Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
+
+const getNews = async () => {
+  const API_KEY = "ed90ae8425cb429c960aae7d6305635f";
+  const BASE_URL = "https://newsapi.org/v2/";
+  const queryString = "top-headlines?country=us&category=sport&";
+  // https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=ed90ae8425cb429c960aae7d6305635f
+  try {
+    const res = await fetch(`${BASE_URL}${queryString}apiKey=${API_KEY}`);
+    //?Error handling
+    if (!res.ok) {
+      throw new Error(`Something went wrong:${res.status}`);
+    }
+    const data = await res.json();
+    renderNews(data.articles);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const renderNews = (news) => {
+  const newsDiv = document.getElementById("news-div");
+
+  news.forEach((item) => {
+  
+    const {title,description, urlToImage, url,content}=item
+    newsDiv.innerHTML += `
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+  <div class="card" >
+    <img src="${urlToImage}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${title}</h5>
+        <p class="card-text">${content}</p>
+        <a href="${url}" target="_blank" class="btn btn-primary">Detail</a>
+    </div>
+   </div>
+   </div>
+  `;
+  });
+};
+
+window.addEventListener("load", () => {
+  getNews();
+});
