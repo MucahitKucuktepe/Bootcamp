@@ -19,7 +19,7 @@
 //* Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
 
 const getNews = async () => {
-  const API_KEY = "ed90ae8425cb429c960aae7d6305635ff";
+  const API_KEY = "ed90ae8425cb429c960aae7d6305635f";
   const BASE_URL = "https://newsapi.org/v2/";
   const queryString = "top-headlines?country=us&category=sport&";
   // https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=ed90ae8425cb429c960aae7d6305635f
@@ -31,6 +31,7 @@ const getNews = async () => {
     }
     const data = await res.json();
     renderNews(data.articles);
+    console.log(data);
   } catch (error) {
     const newsDiv = document.getElementById("news-div");
     newsDiv.innerHTML +=`

@@ -22,13 +22,13 @@ fetch("https://api.github.com/users")
     return res.json();
   })
   .then((data) => {
-    // veri = data
-    // console.log(veri)
+    veri = data
+    console.log(veri)
     show(data);
   })
   .catch((err) => document.write(err));
 
-console.log(veri);
+
 
 const show = (users) => {
   const userSection = document.getElementById("users");
