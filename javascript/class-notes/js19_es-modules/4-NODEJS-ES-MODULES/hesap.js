@@ -1,1 +1,1 @@
-const topla =(a,b)=> a+b
+export const topla =(a,b)=> a+b
