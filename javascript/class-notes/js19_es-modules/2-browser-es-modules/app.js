@@ -19,5 +19,15 @@ console.log("BOL", bol(6,4));
 console.log("CIKAR:", cikar(5,4));
 //! 1- import'lar hoisted olur bu yüzden herhangi bir yerde eklenebilir ancak best practice en üste eklenmeleridir.
 //? export default ile paylaşılan bir değişken v.b süslü parantez kullanılmadan import edilebilir.
+//?export default da as kullanmadan  herhangi bir isim kullanılabilir
 import mesaj from "./hesapmakinesi.js"
 mesaj()
+
+//! 1- import'lar hoisted olur bu yüzden herhangi bir yerde eklenebilir ancak best practice en üste eklenmeleridir.
+
+//! 2- top-level this kullanimi window objesini göstermez.
+console.log(this) //? undefined
+
+//! 3- default olarak 'use strict' aciktir. Dolayısıyla Daha katı bir şekilde derleme yapilir.
+// variable = 2
+// console.log(variable)
