@@ -1,5 +1,4 @@
+console.log("COMMON-JS");
 
-import {topla} from "./hesap.js"
-import *as emoji from "node-emoji"
-console.log(topla(3,4));
-console.log(emoji.random());
+import { topla } from "./app.js";
+console.log(topla(3,5));
