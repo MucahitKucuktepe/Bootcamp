@@ -1,10 +1,10 @@
 import { renderCoins } from "./renderData";
 
 export const apiRequest = async (input) => {
-  const API_KEY = "coinranking6a0b3a82d0ba5c11bda27f9bb89f2eb977a7b3a78605f8fe";
+
   const options = {
     headers: {
-      "x-access-token": API_KEY,
+      "x-access-token": import.meta.env.VITE_API_KEY
     },
   };
 
