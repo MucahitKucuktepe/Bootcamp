@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
 }
