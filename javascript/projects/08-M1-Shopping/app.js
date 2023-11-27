@@ -150,11 +150,48 @@ const displayProducts = (arr) => {
 const addToCart = (product) => {
   console.log(product);
   if (baskets.some((item) => item.title === product.title)) {
-    baskets=baskets.map((item) => {
-      return item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item;
+    baskets = baskets.map((item) => {
+      return item.id === product.id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item;
     });
   } else {
     baskets.push(product);
   }
   console.log(baskets);
 };
+
+//!! FİLTRELEME İŞLEMLERİ
+
+btnDivs.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn")) {
+    const selectedCategory = e.target.innerText.toLowerCase();
+    categoryTitle.innerText = selectedCategory.toUpperCase();
+    const value = searchInput.value;
+    const filteredProducts = filtered(selectedCategory,value)
+
+    displayProducts(filteredProducts);
+  }
+});
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase();
+  const selectedCategory = categoryTitle.innerText.toLowerCase();
+  const filteredProducts = filtered(selectedCategory, value);
+  displayProducts(filteredProducts);
+});
+
+function filtered(selectedCategory, value){
+  const newArr =
+    selectedCategory === "all"
+      ? products
+      : products.filter(
+          (item) =>
+            item.category.toLowerCase() === selectedCategory &&
+            item.title.toLowerCase().includes(value.toLowerCase())
+        );
+  return newArr;
+}
+
+//! Modal kısmına ekleme
+
