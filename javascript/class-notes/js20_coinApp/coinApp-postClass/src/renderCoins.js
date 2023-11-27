@@ -25,6 +25,7 @@ $${Number(price).toFixed(4)}
 </figcaption>
 </figure>
 <div>RANK:${rank}</div>
+
   `;
   coinsUl.append(newCoinLi);
   newCoinLi.querySelector(".remove-icon").addEventListener("click",()=>{
